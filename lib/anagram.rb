@@ -13,16 +13,6 @@ class Anagram
     
     split_word = @word.split("").sort
     @array_words.select {|word| word.split("").sort == split_word}
-     
-    # puts split_word
-    # puts @array_words.split("").sort
-   
-    
-  # @array_words.each do |word|
-  #   word if split_word == word.split("").sort
-  #   end 
-    
-
  end 
 
 end   
