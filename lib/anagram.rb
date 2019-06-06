@@ -1,4 +1,5 @@
-# Your code goes here!
+require 'pry'
+
 class Anagram
   
   attr_accessor :word
@@ -8,8 +9,8 @@ class Anagram
   end
   
   def match(anagrams_array)
-    anagrams_array.select do |element|
-      element.split(//).sort == word.split(//).sort
+    anagrams_array.select do |anagram|
+      anagram.split("").sort == @word.split("").sort
     end
   end
   
